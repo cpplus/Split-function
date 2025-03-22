@@ -1,7 +1,4 @@
-#include <iostream>
 #include <random>
-#include <chrono>
-#include <thread>
 
 int random(int min, int max) {
     std::random_device rd;
