@@ -2,7 +2,7 @@
 #include <string.h>
 #include <vector>
 
-std::vector<std::string> split(std::string str, std::string delimiter)
+inline std::vector<std::string> split(std::string str, std::string delimiter)
 {
     char* cstr = const_cast<char*>(str.c_str());
     char* current = strtok(cstr, delimiter.c_str());
