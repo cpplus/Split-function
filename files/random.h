@@ -32,10 +32,9 @@ const char* randStr(const int length, const char* charset = AsciiCharset()) {
 } 
 
 /*returns a random number based on the percentages. 
-* the first in values: valueant. the second int
-* is the percentage it will
-* appear. the percentages do not
-* have to add up to 100. 
+* the first int in values: valueant. the second int
+* the second int in values: the percentage to use. 
+* the percentages do not have to add up to 100. 
 */
 int randWithPercent(std::map<int, int> values) {
     int addPerc = 0;
