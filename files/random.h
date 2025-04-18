@@ -1,6 +1,7 @@
 #include <random>
 #include <cstring>
 #include <string>
+#include <map>
 
 #include "AsciiCharset.h"
 
@@ -23,3 +24,23 @@ const char* randStr(const int length, const char* charset = AsciiCharset()) {
     std::strcpy(chr,str.c_str());
     return chr;
 } 
+/*
+* the first int in values is the
+* value you want. the second int
+* is the percentage it will
+* appear. the percentages do not
+* have to add up to 100. 
+*/
+int randWithPercent(std::map<int, int> values) {
+    int addPerc = 0;
+    for (const auto& pair : values) 
+        addPerc+=pair.second;
+    
+    int vals[addPerc];
+    int currentNum = 0;
+    for (const auto& pair : values)
+        for (int i = 0; i < pair.second; i++) 
+            vals[currentNum++] = pair.first;
+    
+     return vals[random(0, addPerc - 1)];
+}
