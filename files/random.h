@@ -1,6 +1,9 @@
 #include <random>
 #include <cstring>
 #include <string>
+
+#include "AsciiCharset.h"
+
 const int random(const int min, const int max) {
     std::random_device rd;
     std::mt19937 gen(rd());
