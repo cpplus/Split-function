@@ -1,6 +1,13 @@
-int randWithPercent(std::map<int, int> values) {
-    int mean = 0;
-    for (const auto& pair : values) 
-        mean+=pair.second;
-    mean/=values.size();
+// central tendancy
+struct CtrTen {
+    double mean, median, mode;
+}
+
+CtrTen getCT(std::vector<int> vals) {
+    CtrTen ct;
+    
+    // get mean
+    for (int i = 0; i < vals.size(); i++)
+        ct.mean += vals[i];
+    ct.mean /= vals.size();
 } 
