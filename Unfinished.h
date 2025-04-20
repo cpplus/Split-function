@@ -24,4 +24,6 @@ CtrTen getCT(std::vector<int> vals) {
             ct.mode = pair.first;
         }
     }
+
+    return ct;
 } 
