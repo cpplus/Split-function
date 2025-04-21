@@ -1,12 +1,12 @@
 #include <vector>
 #include <unordered_map>
-// central tendancy
-struct CtrTen {
+// Central Tendancy
+struct CT {
     double mean, median, mode;
-}
+};
 
-CtrTen getCT(std::vector<int> vals) {
-    CtrTen ct;
+CT getCT(std::vector<int> vals) {
+    CT ct;
     
     // get mean
     for (int i = 0; i < vals.size(); i++)
@@ -15,7 +15,7 @@ CtrTen getCT(std::vector<int> vals) {
 
     // get mode
     std::unordered_map<int, int> counts;
-    for (int num : vec) {
+    for (int num : vals) {
         counts[num]++;
     }
 
