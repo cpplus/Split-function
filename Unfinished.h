@@ -1,3 +1,5 @@
+#include <vector>
+#include <unordered_map>
 // central tendancy
 struct CtrTen {
     double mean, median, mode;
