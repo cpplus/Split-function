@@ -8,7 +8,7 @@ char* appendChar(char* str, char c) {
         return newStr;
     }
 
-    size_t len = strlen(str);
+    size_t length = strlen(str);
     char* newStr = new char[length + 2];
     strcpy(newStr, str);
     newStr[length] = c;
