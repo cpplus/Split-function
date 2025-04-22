@@ -11,3 +11,4 @@ const char* appendChar(char* str, char c) {
     newStr[length + 1] = '\0';
     delete[] str;
     return newStr;
+} 
