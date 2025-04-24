@@ -8,7 +8,7 @@
 // returns a random number based on min and max. 
 // min: the minimum number that can be returned.
 // max: the maximum number that can be returned. 
-const int random(const int min, const int max) {
+const int random(const int min = 0, const int max = INT_MAX) {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> distrib(min, max);
