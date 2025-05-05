@@ -12,11 +12,11 @@ bool NAND(bool a, bool b) {
 }
 
 bool OR(bool a, bool b) {
-    return a + b > 0
+    return a + b;
 }
 
 bool NOR(bool a, bool b) {
-    return NOT(a + b)
+    return NOT(a + b);
 }
 
 bool XOR(bool a, bool b) {
