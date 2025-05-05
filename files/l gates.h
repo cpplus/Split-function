@@ -7,24 +7,24 @@ bool AND(bool a, bool b) {
 
 }
 
-bool NAND() {
+bool NAND(bool a, bool b) {
 
 }
 
-bool OR() {
-
-}
-
-
-bool NOR() {
-
-}
-
-bool XOR() {
+bool OR(bool a, bool b) {
 
 }
 
 
-bool NXOR() {
+bool NOR(bool a, bool b) {
+
+}
+
+bool XOR(bool a, bool b) {
+
+}
+
+
+bool NXOR(bool a, bool b) {
 
 }
