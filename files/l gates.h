@@ -15,7 +15,6 @@ bool OR(bool a, bool b) {
     return a + b > 0
 }
 
-
 bool NOR(bool a, bool b) {
     return NOT(a + b)
 }
@@ -23,7 +22,6 @@ bool NOR(bool a, bool b) {
 bool XOR(bool a, bool b) {
     return a ^ b;
 }
-
 
 bool NXOR(bool a, bool b) {
     return 1 ^ a ^ b;
