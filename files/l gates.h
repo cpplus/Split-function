@@ -1,16 +1,30 @@
 // logic gates
-bool NOT() {
+bool NOT(bool a) {
 
 }
 
-bool AND() {
+bool AND(bool a, bool b) {
 
 }
 
-bool NAND()
+bool NAND() {
 
-bool OR()
-bool NOR()
+}
 
-bool XOR()
-bool NXOR()
+bool OR() {
+
+}
+
+
+bool NOR() {
+
+}
+
+bool XOR() {
+
+}
+
+
+bool NXOR() {
+
+}
