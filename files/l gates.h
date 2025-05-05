@@ -1,6 +1,6 @@
 // logic gates
 bool NOT(bool a) {
-
+     return 0 ^ a;
 }
 
 bool AND(bool a, bool b) {
